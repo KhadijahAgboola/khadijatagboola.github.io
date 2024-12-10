@@ -1,464 +1,443 @@
-<!DOCTYPE HTML>
-<!--
-	Strata by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Agboola Khadijat Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khadijat Agboola - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: white;
+            color: #333;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            border-bottom: 1px solid #ccc;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar .name {
+            font-size: 26px;
+            font-family: 'Playfair Display', serif;
+            font-weight: 300;
+            color: #333;
+        }
+        .navbar .buttons {
+            display: flex;
+            gap: 10px;
+        }
+        .navbar button {
+            background-color: #f4f4f4;
+            color: #333;
+            border: 1px solid #ccc;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 16px;
+            font-family: 'Roboto', sans-serif;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+        }
+        .navbar button:hover {
+            background-color: #ddd;
+            color: #000;
+            transform: translateY(-2px);
+        }
+        section {
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+        #about {
+            background: #f9f9f9;
+            margin: 0 20px;
+        }
+        .icons {
+            list-style: none; /* Remove bullets */
+            display: flex; /* Arrange items in a row */
+            gap: 20px; /* Add space between icons */
+            justify-content: left; /* Center the icons */
+            padding: 0; /* Remove padding */
+            margin: 20px 50px; /* Remove margin */
+        }
 
-		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<a href="#" class="image avatar"><img src="images/Headshot.jpg" alt="" /></a>
-					<h1><strong>Khadijat Agboola</strong>, Data Analyst,<br />
-					Data Scientist and BI Analyst<br />
-					</h1>
-				</div>
-			</header>
+        .icons li {
+            display: inline-block; /* Ensure each item behaves inline */
+        }
 
-		<!-- Main -->
-			<div id="main">
+        .icons a {
+            font-size: 24px; /* Set the size of the icons */
+            color: #333; /* Default color for the icons */
+            text-decoration: none; /* Remove underline on links */
+        }
 
-				<!-- One -->
-					<section id="one">
-						<header class="major">
-							<h2><strong>About Me</strong></h2>
-						</header>
-						<p>I am a Data Analyst/Data Scientist skilled in MicrosoftExcel, SQL, Power Bi, Tableau, Python, R, Matplotlib and other data analyst tools. I have a great passion for data, working with data, looking for insight and making predictions which in turn help drive informed business decisions make me feel like a detective in a movie. I've had the privilege of working on diverse projects that have honed my analytical skills. I've
-						analyzed data for a high-tech health product manufacturer using R and Excel to uncover growth opportunities. I've also
-						dived into machine learning, creating predictive models for median housing prices with Python. Additionally, I've developed CEO
-						dashboards using PowerBI. My expertise in data science, data analysis and visualization can help you make data-driven decisions and
-						unlock valuable insights. Let's discuss how I can bring these skills to your projects.</p>
-					</section>
+        .icons a:hover {
+            color: #0077b5; /* Optional hover color */
+        }
+        #skills {
+            background: #f1f1f1;
+        }
+        #projects {
+            background: #e9e9e9;
+            min-height: 50vh;
+        }
+        #contact {
+            background: #e1e1e1;
+        }
+        #about img {
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="name">Khadijat Agboola</div>
+        <div class="buttons">
+            <button onclick="scrollToSection('about')">About</button>
+            <button onclick="scrollToSection('skills')">Skills</button>
+            <button onclick="scrollToSection('projects')">Projects</button>
+            <button onclick="scrollToSection('contact')">Contact</button>
+        </div>
+    </div>
 
-				<!-- Two -->
-					<section id="two">
-						<h2><strong>Projects</strong></h2>
-						<div class="row">
-								<article class="col-6 col-12-xsmall work-item">
-									<a href="images/bellabeat.png" class="image fit thumb"><img src="images/bellabeat.png" alt="" /></a>
-									<h3>Bellabeat fitness Tracker Analysis using R</h3>
-									<p>This project is done as part of the requirements of the Google Data Analytics Professional Certificate. It is an
-										analysis of a wellness company, Bellabeat’s available consumer data to reveal more opportunities for growth..
-									</p>
-									<ul class="actions">
-										<li><a href="https://www.kaggle.com/code/khadijatagboola/bellabeat-fitness-tracker-analysis" class="button">View
-												Project</a></li>
-									</ul>
-								</article>
-								<article class="col-6 col-12-xsmall work-item">
-									<a href="images/sprocket.png" class="image fit thumb"><img src="images/sprocket.png" alt="" /></a>
-									<h3>Analysis of Sprocket Central pty. Ltd customers’ dataset to drive business growth</h3>
-									<p>I cleaned, analyze and built a fascinating sales dashboard that analyses a bike sales company’s customers’ data
-										using Excel and Power Bi..</p>
-									<ul class="actions">
-										<li><a href="sprocket.html" class="button">View Project</a></li>
-									</ul>
-								</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/thumbs/Power Bi.png" class="image fit thumb"><img src="images/thumbs/Power Bi.png" alt="" /></a>
-								<h3>Tata Data Visualisation: Empowering Business with Effective Insights Job Simulation on Forage - October 2023</h3>
-								<p>In this project, I completed a simulation involving creating data visualizations for Tata Consultancy Services, prepared questions for a meeting with client senior leadership and created visuals for data analysis to help executives with effective decision making</p>
-								
-								<ul class="actions">
-									<li><a href="tata.html" class="button">View Project</a></li>
-								</ul>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="california.jpg" class="image fit thumb"><img src="images/california.jpg" alt="" /></a>
-								<h3>California Housing Price Prediction</h3>
-								<p>I built machine learning models of housing prices to predict median house values in California using Python</p>
-								<ul class="actions">
-									<li><a href="machinelearning.html" class="button">View Project</a></li>
-								</ul>
-							</article>
-						</div>
-					</section>
+    <section id="about">
+        <img src="images/Background.PNG" alt="Background Image">
+        <h1>About Me</h1>
+        <p>Welcome to my portfolio. I am Khadijat Agboola, a first-class graduate in Mathematics and Statistics, a Data Scientist, and a Junior Machine Learning Expert. Currently, I work as a Clinical Programmer, where I apply my expertise to solve complex challenges in the healthcare sector.</p>
+        <p>With hands-on experience in building predictive models, recommendation systems, data analysis, and working with healthcare data, I am passionate about leveraging data to drive meaningful insights and innovations. This portfolio showcases my skills, projects, and the work I have done so far, reflecting my dedication to data science, machine learning, and artificial intelligence. I invite you to explore and learn more about my journey and capabilities.</p>
+        <ul class="icons">
+            <li><a href="https://www.kaggle.com/khadijatagboola" class="fab fa-kaggle" aria-label="Kaggle"></a></li>
+            <li><a href="https://github.com/KhadijahAgboola" class="fab fa-github" aria-label="GitHub"></a></li>
+            <li><a href="https://www.linkedin.com/in/khadijatagboola/" class="fab fa-linkedin" aria-label="LinkedIn"></a></li>
+        </ul>
 
-				<!-- Three -->
-					<section id="three">
-						<h2>Get In Touch</h2>
-						<p>I'd love to hear from you. Please feel free to send me a message.</p>
-						<div class="row">
-							<div class="col-8 col-12-small">
-								<form method="post" action="khadijahagboola12@gmail.com">
-									<div class="row gtr-uniform gtr-50">
-										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
-									</div>
-								</form>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</div>
-							<div class="col-4 col-12-small">
-								<ul class="labeled-icons">
-									<li>
-										<h3 class="icon solid fa-home"><span class="label">Address</span></h3>
-										Lagos,
-										Nigeria.
-									</li>
-									<li>
-										<h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
-										+234-8021248346
-									</li>
-									<li>
-										<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
-										<a href="khadijahagboola12@gmail.com">khadijahagboola12@gmail.com</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</section>
 
-				<!-- Four -->
-				<!--
-					<section id="four">
-						<h2>Elements</h2>
+    <section id="skills" style="background-color: #B3C8CF; padding: 40px 20px; margin: 0 20px;"">
+        <h1>Skills</h1>
+        <p>Here are some of the skills I have, and I am currently learning to add more skills.</p>
+        <div class="skills-container">
+            <!-- Python Skill -->
+            <div class="skill">
+                <img src="images/Python-logo-notext.svg.png" alt="Python Logo" class="skill-logo">
+                <h3>Python</h3>
+                <p>With Python, I have experience building predictive models, data analysis, and implementing machine learning algorithms. I have used libraries such as Pandas, NumPy, Scikit-learn, and TensorFlow for various projects, including healthcare applications like disease prediction models and recommendation systems.</p>
+            </div>
+            
+            <!-- SAS Skill -->
+            <div class="skill">
+                <img src="images/SAS_logo.svg" alt="SAS Logo" class="skill-logo">
+                <h3>SAS</h3>
+                <p>I have experience using SAS for data analysis and handling large healthcare datasets. I currently work as a clinical programmer, where I use SAS to generate tables, listings, and figures, as well as perform statistical analysis.</p>
+            </div>
+            
+            <!-- Machine Learning and AI Skill -->
+            <div class="skill">
+                <img src="images/machine learning logo.png" alt="Machine Learning Logo" class="skill-logo">
+                <h3>Machine Learning & AI</h3>
+                <p>As a Junior Machine Learning Expert, I have hands-on experience in building, training, and optimizing machine learning models, including regression, classification, and ensemble methods. I have used techniques like Random Forest, XGBoost, and Support Vector Machines to solve real-world problems like disease progression forecasting and recommendation systems.</p>
+            </div>
+            
+            <!-- Computer Vision / OpenCV Skill -->
+            <div class="skill">
+                <img src="images/opencv logo.png" alt="OpenCV Logo" class="skill-logo">
+                <h3>Computer Vision / OpenCV</h3>
+                <p>Using OpenCV, I have applied computer vision techniques for image processing, object detection, and face recognition tasks. I have worked on various projects where computer vision was essential in analyzing and extracting information from images and video streams.</p>
+            </div>
+            
+            <!-- R Skill -->
+            <div class="skill">
+                <img src="images/R_logo.svg.png" alt="R Logo" class="skill-logo">
+                <h3>R</h3>
+                <p>In R, I have used it extensively for statistical analysis, data visualization, and machine learning. I have worked on various projects related to predictive analytics, especially in healthcare, using packages like ggplot2, caret, and randomForest to analyze and model data.</p>
+            </div>
+        </div>
+    </section>
+    
+    <style>
+        /* Styles for the skill section */
+        #skills {
+            background-color: #B3C8CF;
+            padding: 40px 20px;
+            text-align: center; /* Center the text inside the skills section */
+        }
+    
+        #skills h1 {
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+    
+        /* Style for the skill description paragraph */
+        #skills p {
+            font-size: 18px; /* Adjust font size */
+            color: #555; /* Text color */
+            max-width: 800px; /* Set maximum width for the paragraph */
+            margin: 0 auto; /* Center the paragraph */
+            margin-bottom: 40px; /* Space below the paragraph */
+        }
+    
+        /* Container for skills */
+        .skills-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 30px;
+            text-align: center;
+        }
+    
+        /* Each individual skill box */
+        .skill {
+            padding: 20px;
+            border-radius: 10px;
+            width: 200px;;
+        }
+    
+        .skill-logo {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 15px;
+        }
+    
+        .skill h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+    
+        .skill p {
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+    
+    
+    <style>
+        /* Styles for the projects section */
+        #projects {
+            background-color: white;
+            padding: 40px 20px 0;
+            text-align: left;  /* Align text to the left */
+        }
+    
+        #projects h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+    
+        #projects p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 30px;
+        }
+    
+        /* List of project links */
+        .projects-list {
+            display: flex;
+            flex-direction: column;  /* Stack projects vertically */
+            gap: 15px;  /* Space between project links */
+            margin: 0;
+            padding: 0;
+        }
+    
+        .projects-list a {
+            font-size: 18px;
+            text-decoration: none;
+            color: #007BFF;
+        }
+    
+        .projects-list a:hover {
+            text-decoration: underline;  /* Underline on hover for interaction */
+        }
+    </style>
+    
+    <section id="projects" style="background-color: white; padding: 40px 20px 0; margin: 0 20px;"">
+        <h1>Projects</h1>
+        <p>My portfolio features the following projects I have done at my free time.</p>
+    
+        <!-- Project Links -->
+        <div class="projects-list">
+            <a href="#ocr-app">1. A Streamlit-Powered OCR App for Effortless Text Extraction from Images and PDF</a>
+            <a href="#skincare-recommendation">2. Building a Personalized Skincare Recommendation System</a>
+            <a href="#liver-disease-prediction">3. Predictive Models aimed at Diagnosing and Forecasting the Progression of Liver Disease</a>
+        </div>
+    </section>
+    
+    
+    <!-- OCR App Section -->
+    <section id="ocr-app" style="background-color: #FFFBF5; padding: 40px 20px; margin: 60px 20px;">
+        <h2>A Streamlit-Powered OCR App for Effortless Text Extraction from Images and PDF</h2>
+        <img src="images/extractify.jpg" alt="Extractify OCR App" style="width: 100%; max-width: 600px; display: block; margin: 20px auto; border-radius: 10px;">
+        
+        <h3>Highlights</h3>
+        <ul>
+            <li><strong>Automated Text Extraction:</strong> Utilized Python libraries like OpenCV and EasyOCR to seamlessly extract text from images and PDFs, ensuring high accuracy and efficiency.</li>
+            <li><strong>Data Management and Export:</strong> Organized extracted data for easy access, enabling users to export results directly to Excel for further analysis.</li>
+            <li><strong>User-Friendly Interface:</strong> Built a Streamlit-powered platform providing an intuitive and accessible experience for students, researchers, and professionals handling text-heavy data.</li>
+        </ul>
 
-						<section>
-							<h4>Text</h4>
-							<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-							This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-							This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-							<hr />
-							<header>
-								<h4>Heading with a Subtitle</h4>
-								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-							</header>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-							<header>
-								<h5>Heading with a Subtitle</h5>
-								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-							</header>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-							<hr />
-							<h2>Heading Level 2</h2>
-							<h3>Heading Level 3</h3>
-							<h4>Heading Level 4</h4>
-							<h5>Heading Level 5</h5>
-							<h6>Heading Level 6</h6>
-							<hr />
-							<h5>Blockquote</h5>
-							<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-							<h5>Preformatted</h5>
-							<pre><code>i = 0;
+        <p><strong>Problem statement:</strong> “We need a developer to develop a tool that extracts text (OCR) from uploaded images, organizes and stores the extracted data, and provides a searchable management system."</p>
+        <p><strong>The Solution: Extractify</strong><br>
+            Extractify leverages Python libraries like OpenCV, EasyOCR, and pandas, wrapped in a user-friendly Streamlit interface. With this tool, you can upload images or PDFs, extract the text, and even export the results to Excel. It’s perfect for students, researchers, or anyone working with text data.
+        </p>
+    
+        <!-- Action Buttons -->
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="https://extractified.streamlit.app/" target="_blank" 
+               style="background-color: #007BFF; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-right: 10px;">
+                Web App
+            </a>
+            <a href="https://github.com/KhadijahAgboola/Extractify/blob/main/ocr_app.py" target="_blank" 
+               style="background-color: #28A745; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-right: 10px;">
+                GitHub Repo
+            </a>
+            <a href="https://medium.com/@khadijahagboola12/building-extractify-a-streamlit-powered-ocr-app-for-effortless-text-extraction-266fad589666" 
+               target="_blank" 
+               style="background-color: #FF5733; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">
+                Blog
+            </a>
+        </div>
+    </section>
+    
+    <!-- Skincare Recommendation System Section -->
+    <section id="skincare-recommendation" style="background-color: #FFFBF5; padding: 40px 20px; margin: 60px 20px;">
+        <h2>Building a Personalized Skincare Recommendation System</h2>
+        <img src="images/dermaguide.jpg" alt="Dermaguide Skincare Recommendation System" style="width: 60vw; height: auto; max-height: 300px; display: block; margin: 20px auto; border-radius: 10px;">
 
-while (!deck.isInOrder()) {
-print 'Iteration ' + i;
-deck.shuffle();
-i++;
-}
+    
+        <!-- Highlights -->
+        <h3>Highlights</h3>
+        <ul>
+            <li><strong>Data Handling:</strong> Cleaned and encoded the dataset for efficient processing.</li>
+            <li><strong>Algorithm Design:</strong> Leveraged similarity metrics to match users with products.</li>
+            <li><strong>Implementation:</strong> Built a Python-based model integrated with Typeform inputs.</li>
+        </ul>
+    
+        <!-- Problem Statement -->
+        <p><strong>Problem statement:</strong> “We are a personalized skincare brand looking for someone skilled in Typeform and recommendation algorithms to create user-friendly surveys and build algorithms for personalized product suggestions.”</p>
 
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-						</section>
+        <!-- Solution -->
+        <p><strong>Solution: Dermaguide</strong><br>
+        The goal was to create a system that could provide tailored skincare product suggestions. The challenge lay in the lack of user feedback — critical for techniques like Collaborative Filtering. Instead, I needed to rely on user attributes (e.g., age, skin type, concerns) to build a Content-Based Filtering model.</p>
+        <p>Additionally, I had to design a seamless way to collect this data, ensuring an easy and engaging user experience.</p>
 
-						<section>
-							<h4>Lists</h4>
-							<div class="row">
-								<div class="col-6 col-12-xsmall">
-									<h5>Unordered</h5>
-									<ul>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Sagittis adipiscing lorem eleifend.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ul>
-									<h5>Alternate</h5>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Sagittis adipiscing lorem eleifend.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-xsmall">
-									<h5>Ordered</h5>
-									<ol>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Etiam vel felis at lorem sed viverra.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Etiam vel felis at lorem sed viverra.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ol>
-									<h5>Icons</h5>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-										<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-										<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
-									</ul>
-								</div>
-							</div>
-							<h5>Actions</h5>
-							<ul class="actions">
-								<li><a href="#" class="button primary">Default</a></li>
-								<li><a href="#" class="button">Default</a></li>
-							</ul>
-							<ul class="actions small">
-								<li><a href="#" class="button primary small">Small</a></li>
-								<li><a href="#" class="button small">Small</a></li>
-							</ul>
-							<div class="row">
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary small">Small</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary fit">Default</a></li>
-										<li><a href="#" class="button fit">Default</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary small fit">Small</a></li>
-										<li><a href="#" class="button small fit">Small</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
+    <!-- Recommendation Model -->
+        <h3>Building the Recommendation Model</h3>
+        <p>
+            Using the collected data, I developed a Content-Based Filtering recommendation system. Here’s how:
+        </p>
+        <ul>
+            <li><strong>Input:</strong> User attributes (age group, skin type, concerns).</li>
+            <li><strong>Logic:</strong> The algorithm analyzes the provided features to identify the most suitable products.</li>
+            <li><strong>Output:</strong> Personalized product recommendations tailored to the user’s profile.</li>
+        </ul>
+    
+        <!-- Action Buttons -->
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="https://dermaguide-f5bcf9a6fbdb.herokuapp.com/" target="_blank" 
+            style="background-color: #007BFF; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-right: 10px;">
+                Web App
+            </a>
+            <a href="https://github.com/KhadijahAgboola/https---github.com-KhadijahAgboola-Dermaguide" target="_blank" 
+            style="background-color: #28A745; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-right: 10px;">
+                GitHub Repo
+            </a>
+            <a href="https://medium.com/@khadijahagboola12/from-problem-to-solution-building-a-personalized-skincare-recommendation-system-d6b73bf4e74e" 
+            target="_blank" 
+            style="background-color: #FF5733; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">
+                Blog
+            </a>
+        </div>
+    </section>
 
-						<section>
-							<h4>Table</h4>
-							<h5>Default</h5>
-							<div class="table-wrapper">
-								<table>
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th>Description</th>
-											<th>Price</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Item One</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Two</td>
-											<td>Vis ac commodo adipiscing arcu aliquet.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Three</td>
-											<td> Morbi faucibus arcu accumsan lorem.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Four</td>
-											<td>Vitae integer tempus condimentum.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Five</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td colspan="2"></td>
-											<td>100.00</td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
+    <!-- liver-disease-prediction Section -->
+    <section id="liver-disease-prediction" style="background-color: #FFFBF5; padding: 40px 20px; margin: 60px 20px;">
+        <h2>Predictive models aimed at diagnosing and forecasting the progression of liver disease.</h2>
+        <img src="images\liver.jpg" alt="Predictive model" style="width: 100%; max-width: 600px; display: block; margin: 20px auto; border-radius: 10px;">
+        
+        <h3>Highlights</h3>
+        <ul>
+            <li><strong>Data Cleaning and Analysis:</strong>Conducted thorough data cleaning and exploratory analysis on a liver disease dataset to uncover key patterns and insights, ensuring a robust foundation for model development.</li>
+            <li><strong>Predictive Model Development:</strong>Trained and compared the performance of seven machine learning models, identifying the top three performers for diagnosing liver disease with high accuracy.</li>
+            <li><strong>Ensemble Solution:</strong> Built an ensemble model combining predictions from the best-performing models to enhance reliability and provide a non-invasive alternative for liver disease diagnosis.</li>
+        </ul>
 
-							<h5>Alternate</h5>
-							<div class="table-wrapper">
-								<table class="alt">
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th>Description</th>
-											<th>Price</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Item One</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Two</td>
-											<td>Vis ac commodo adipiscing arcu aliquet.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Three</td>
-											<td> Morbi faucibus arcu accumsan lorem.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Four</td>
-											<td>Vitae integer tempus condimentum.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Five</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td colspan="2"></td>
-											<td>100.00</td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
-						</section>
+        <p><strong>Problem statement:</strong> “We are looking for an expert in data analysis and machine learning to develop predictive models aimed at diagnosing and forecasting the progression of liver disease. This project is based on retrospective data from three major hospitals and seeks to provide a non-invasive alternative to current diagnostic methods.”</p>
+        <p><strong>The Solution:</strong><br>
+           To develop this predictive model for diagnosing and forecasting liver disease progression, I utilized a Kaggle dataset, cleaned and prepared the data, and performed exploratory analysis to identify key patterns. The project leveraged machine learning tools like Logistic Regression, Random Forest, and XGBoost to train and evaluate models, focusing on the target variable “Dataset” (1: disease, 2: no disease). Ultimately, I combined the top-performing models into an ensemble for enhanced accuracy. Tools such as Python, pandas, scikit-learn, and Matplotlib were instrumental in building this non-invasive diagnostic system, offering a promising alternative to traditional methods.
+        </p>
+    
+        <!-- Action Buttons -->
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="https://colab.research.google.com/drive/1endvwiJY-JKm15Vc3pbKL_jGXO76C3St?usp=sharing" target="_blank" 
+               style="background-color: #007BFF; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-right: 10px;">
+                Colab code
+            </a>
+            <a href="https://www.loom.com/share/67616af8ac11465bbfae60f97ddb588c?sid=bc2de358-4850-4974-bbbb-28d3283346c4" target="_blank" 
+               style="background-color: #28A745; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-right: 10px;">
+                Video Explanation
+            </a>
+            <a href="https://medium.com/@khadijahagboola12/building-model-to-predict-liver-disease-dc97dd1c6406" 
+               target="_blank" 
+               style="background-color: #FF5733; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">
+                Blog
+            </a>
+        </div>
+    </section>
 
-						<section>
-							<h4>Buttons</h4>
-							<ul class="actions">
-								<li><a href="#" class="button primary">Primary</a></li>
-								<li><a href="#" class="button">Default</a></li>
-							</ul>
-							<ul class="actions">
-								<li><a href="#" class="button large">Large</a></li>
-								<li><a href="#" class="button">Default</a></li>
-								<li><a href="#" class="button small">Small</a></li>
-							</ul>
-							<ul class="actions fit">
-								<li><a href="#" class="button primary fit">Fit</a></li>
-								<li><a href="#" class="button fit">Fit</a></li>
-							</ul>
-							<ul class="actions fit small">
-								<li><a href="#" class="button primary fit small">Fit + Small</a></li>
-								<li><a href="#" class="button fit small">Fit + Small</a></li>
-							</ul>
-							<ul class="actions">
-								<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-								<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-							</ul>
-							<ul class="actions">
-								<li><span class="button primary disabled">Primary</span></li>
-								<li><span class="button disabled">Default</span></li>
-							</ul>
-						</section>
-
-						<section>
-							<h4>Form</h4>
-							<form method="post" action="#">
-								<div class="row gtr-uniform gtr-50">
-									<div class="col-6 col-12-xsmall">
-										<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-									</div>
-									<div class="col-6 col-12-xsmall">
-										<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-									</div>
-									<div class="col-12">
-										<select name="demo-category" id="demo-category">
-											<option value="">- Category -</option>
-											<option value="1">Manufacturing</option>
-											<option value="1">Shipping</option>
-											<option value="1">Administration</option>
-											<option value="1">Human Resources</option>
-										</select>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-										<label for="demo-priority-low">Low Priority</label>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-normal" name="demo-priority">
-										<label for="demo-priority-normal">Normal Priority</label>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-high" name="demo-priority">
-										<label for="demo-priority-high">High Priority</label>
-									</div>
-									<div class="col-6 col-12-small">
-										<input type="checkbox" id="demo-copy" name="demo-copy">
-										<label for="demo-copy">Email me a copy of this message</label>
-									</div>
-									<div class="col-6 col-12-small">
-										<input type="checkbox" id="demo-human" name="demo-human" checked>
-										<label for="demo-human">I am a human and not a robot</label>
-									</div>
-									<div class="col-12">
-										<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-									</div>
-									<div class="col-12">
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</div>
-								</div>
-							</form>
-						</section>
-
-						<section>
-							<h4>Image</h4>
-							<h5>Fit</h5>
-							<div class="box alt">
-								<div class="row gtr-50 gtr-uniform">
-									<div class="col-12"><span class="image fit"><img src="images/fulls/05.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/04.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/05.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/06.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
-								</div>
-							</div>
-							<h5>Left &amp; Right</h5>
-							<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-							<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-						</section>
-
-					</section>
-				-->
-
-			</div>
-
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<ul class="icons">
-						<li><a href="https://www.kaggle.com/khadijatagboola" class="icon brands fa-kaggle"><span class="label">kaggle</span></a></li>
-						<li><a href="https://github.com/KhadijahAgboola" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="https://www.linkedin.com/in/khadijat-agboola-25165a171" class="icon brands fa-linkedin"><span class="label">Dribbble</span></a></li>
-						<li><a href="Khadijahagboola12@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
-					
-				</div>
-			</footer>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+    <!-- More Projects Section -->
+    <section id="more-projects" style="background-color: #B1F0F7; padding: 40px 20px; margin-top: 20px;">
+        <h2>More Projects</h2>
+    
+        <!-- Container for individual projects -->
+        <div class="more-projects-container">
+            <!-- EnergyApp Project -->
+            <div class="more-project" style="display: flex; margin-bottom: 40px; align-items: flex-start;">
+                <!-- Image Section -->
+                <div class="project-image" style="flex: 1; max-width: 33%; margin-right: 20px;">
+                    <img src="images/energy.jpg" alt="Energy Project Image" style="width: 100%; height: 400px; border-radius: 8px;">
+                </div>
+                <!-- Description Section -->
+                <div class="project-description" style="flex: 2;">
+                    <h3>EnergyApp: Renewable Energy Forecasting</h3>
+                    <p>
+                        <strong>Problem:</strong><br>
+                        Global energy consumption patterns reveal significant disparities in the adoption of renewable energy sources, raising concerns about sustainability and future energy demands. Identifying key trends and accurately forecasting renewable energy production is crucial for informed decision-making. 
+                    </p>
+                    <p>
+                        <strong>Solution:</strong><br>
+                        To address this, I developed <strong>EnergyApp</strong>, a data-driven solution leveraging <strong>Python</strong> for data analysis, visualization, and machine learning. Using libraries like <strong>Pandas</strong>, <strong>Matplotlib</strong>, and <strong>Scikit-learn</strong>, I conducted a comprehensive trend analysis to identify major contributors to energy production. A <strong>Linear Regression model</strong> was employed to forecast future renewable energy output based on historical data. Additionally, I provided actionable optimization recommendations to enhance renewable energy adoption and utilization, emphasizing sustainability. This application serves as a strategic tool for planning and resource management.
+                    </p>
+                    <!-- Action Buttons -->
+                    <div style="text-align: center; margin-top: 20px;">
+                        <a href="https://energyapp-39129a37027f.herokuapp.com/" target="_blank" 
+                           style="background-color: #007BFF; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-right: 10px;">
+                            Web App
+                        </a>
+                        <a href="https://github.com/KhadijahAgboola/Energyapp" target="_blank" 
+                           style="background-color: #28A745; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-right: 10px;">
+                            GitHub Repo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        // Scroll to the specified section smoothly
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
+</body>
 </html>
